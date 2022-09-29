@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import comparePath from "../utilities/comparePath";
 
-interface ItemProps {
+export interface ItemProps {
   path: string;
   children: React.ReactNode;
 }

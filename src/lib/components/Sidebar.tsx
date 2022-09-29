@@ -2,7 +2,7 @@ import useBookmark from "../hooks/useBookmark";
 import Menu from "./Menu";
 import { ChangeEvent } from "react";
 
-interface SidebarProps {
+export interface SidebarProps {
   children: React.ReactNode;
 }
 

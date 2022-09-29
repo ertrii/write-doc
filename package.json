@@ -1,6 +1,6 @@
 {
   "name": "write-doc",
-  "version": "0.1.0",
+  "version": "1.0.0-alpha.1.0",
   "private": true,
   "description": "An environment to document",
   "devDependencies": {
@@ -42,7 +42,7 @@
   "license": "MIT",
   "bugs": "https://github.com/ertrii/write-doc/issues",
   "repository": "https://github.com/ertrii/write-doc",
-  "homepage": "https://github.com/ertrii",
+  "homepage": "/",
   "keywords": [
     "react",
     "documentation"

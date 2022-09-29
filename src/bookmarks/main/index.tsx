@@ -1,15 +1,15 @@
-import { Page } from "../../write-doc";
+import { Page } from "../../lib";
 
 export default function Main() {
   return (
     <Page>
       <p>
-        Esta es una web estática sencilla, estructurada en <b>React</b> para uso
-        de solo documentación.
+        This is a simple static web, structured in <b>React</b> for
+        documentation use only.
       </p>
       <p>
-        El objetivo es centralizar toda la documentación para la facilitar la
-        búsqueda.
+        The objective is to centralize all the documentation to facilitate the
+        search.
       </p>
     </Page>
   );

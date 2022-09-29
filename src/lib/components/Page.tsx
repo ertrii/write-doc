@@ -2,7 +2,7 @@ import usePage from "../hooks/usePage";
 import Navigation from "./Navigation";
 import Sidebar from "./Sidebar";
 
-interface PageProps {
+export interface PageProps {
   children: React.ReactNode;
 }
 

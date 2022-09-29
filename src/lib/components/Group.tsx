@@ -1,4 +1,4 @@
-interface GroupProps {
+export interface GroupProps {
   children: React.ReactNode;
   name: string;
 }

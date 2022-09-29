@@ -7,11 +7,11 @@ import Router from "./Router";
 import { BookmarkProvider } from "../contexts/bookmark-context";
 import { Bookmark } from "../types/bookmark";
 
-interface AppProps {
+export interface WriteDocProps {
   bookmarks: Bookmark[];
 }
 
-function App({ bookmarks }: AppProps) {
+export function WriteDoc({ bookmarks }: WriteDocProps) {
   return (
     <BrowserRouter>
       <BookmarkProvider bookmarks={bookmarks}>
@@ -20,5 +20,3 @@ function App({ bookmarks }: AppProps) {
     </BrowserRouter>
   );
 }
-
-export default App;

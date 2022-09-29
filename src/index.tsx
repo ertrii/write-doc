@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./write-doc/app";
 import reportWebVitals from "./reportWebVitals";
 import bookmarks from "./bookmarks";
+import { WriteDoc } from "./lib";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App bookmarks={bookmarks} />
+    <WriteDoc bookmarks={bookmarks} />
   </React.StrictMode>
 );
 

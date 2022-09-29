@@ -1,15 +1,16 @@
-import { Page } from "../../write-doc";
+import { Page } from "../../lib";
 
 export default function Use() {
   return (
     <Page>
       <p>
-        Al iniciar debes duplicar la plantilla y dentro de <b>./docs</b>,
-        creando un directorio del tema. No olvides corregir las rutas que
-        existen ahí.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sint
+        quaerat facere voluptates numquam cupiditate in. Dicta a, quis aliquid,
+        officiis ipsam repudiandae, voluptatum eaque ducimus culpa numquam aut
+        eligendi?
       </p>
-      <h2>Explicación</h2>
-      <p>Construyendo...</p>
+      <h2>Explication</h2>
+      <p>Building...</p>
     </Page>
   );
 }
