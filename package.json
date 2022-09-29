@@ -1,7 +1,7 @@
 {
   "name": "write-doc",
   "version": "1.0.0-alpha.1.0",
-  "private": true,
+  "private": false,
   "description": "An environment to document",
   "devDependencies": {
     "react": "^18.2.0",
