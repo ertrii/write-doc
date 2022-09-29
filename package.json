@@ -1,6 +1,6 @@
 {
   "name": "write-doc",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "private": false,
   "description": "An environment to document",
   "devDependencies": {
@@ -12,6 +12,7 @@
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "copyfiles": "^2.4.1",
+    "css-minify": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.1",
@@ -29,8 +30,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "css": "copyfiles --flat src/lib/css/*.css lib/css",
-    "lib": "tsc -p ./tsconfig.build.json && npm run css"
+    "css": "css-minify -d src/lib/css -o lib/css",
+    "fonts": "copyfiles --flat src/lib/fonts/** lib/fonts",
+    "lib": "tsc -p ./tsconfig.build.json && npm run css && npm run fonts"
   },
   "eslintConfig": {
     "extends": [
