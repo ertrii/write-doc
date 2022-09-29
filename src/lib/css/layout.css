@@ -1,0 +1,175 @@
+body #layout {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+}
+
+#sidebar {
+  width: 200px;
+  background-color: var(--alternative-2);
+  padding: 1em;
+}
+
+#sidebar #logo {
+  height: calc(80px - 1em);
+  font-size: 0.8em;
+}
+
+select {
+  outline: none;
+  background: var(--alternative);
+  color: var(--white);
+  padding: 0.3em;
+  font-weight: 500;
+  border: 0px;
+  outline: 0px;
+}
+
+#sidebar .selector {
+  margin-bottom: 2em;
+}
+
+#sidebar .selector select {
+  width: 100%;
+}
+
+#sidebar .menu h3 {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+#sidebar ul {
+  list-style: none;
+}
+
+#sidebar ul li {
+  padding: 0.2em 0;
+}
+
+#sidebar ul a {
+  text-decoration: none;
+  font-size: 0.9em;
+  margin-left: 0.8em;
+  position: relative;
+}
+
+#sidebar ul li a::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  background-color: var(--primary);
+  left: -12px;
+  top: 6px;
+  border-radius: 100%;
+}
+
+#sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+#sidebar ul li.active a {
+  opacity: 1;
+  pointer-events: none;
+  border-bottom: 2px solid var(--primary);
+}
+
+#section {
+  width: calc(100% - 200px);
+  background-color: var(--white);
+  padding: 1em 2em 3em;
+  text-align: center;
+  overflow-y: auto;
+}
+
+#section h1:not(.title),
+#section h2,
+#section h3,
+#section h4,
+#section h5,
+#section h6 {
+  text-align: left;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+#section h1:not(.title),
+#section h2 {
+  font-size: 1.2em;
+}
+#section h3 {
+  font-size: 1.1em;
+}
+#section h4 {
+  font-size: 1em;
+}
+#section h5 {
+  font-size: 0.9em;
+}
+#section h6 {
+  font-size: 0.8em;
+}
+
+#section h1.title {
+  color: var(--primary);
+}
+
+#section p,
+#section ul {
+  max-width: 720px;
+  margin-bottom: 0.8em;
+  line-height: 1.4em;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+}
+
+#section p span {
+  color: var(--primary);
+}
+#section p b {
+  font-weight: 700;
+}
+
+#section ul {
+  padding-left: 1em;
+}
+
+#section img {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid var(--alternative-2);
+  max-height: 350px;
+  margin-bottom: 1em;
+  display: block;
+}
+
+#section .navigation {
+  margin-top: 1em;
+  display: inline-block;
+}
+
+#section .navigation a {
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+#section .navigation div {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 0.2em;
+  background-color: var(--alternative);
+  border-radius: 100%;
+}

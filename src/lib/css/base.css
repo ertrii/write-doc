@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "raleway";
+  font-weight: 300;
+  font-display: swap;
+  src: url("./../fonts//Raleway-Font/Raleway-Light.ttf");
+}
+
+@font-face {
+  font-family: "raleway";
+  font-weight: 400;
+  font-display: swap;
+  src: url("./../fonts//Raleway-Font/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "raleway";
+  font-weight: 500;
+  font-display: swap;
+  src: url("./../fonts//Raleway-Font/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "raleway";
+  font-weight: 600;
+  font-display: swap;
+  src: url("./../fonts//Raleway-Font/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "raleway";
+  font-weight: 700;
+  font-display: swap;
+  src: url("./../fonts//Raleway-Font/Raleway-Bold.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-alternates";
+  font-weight: 600;
+  font-display: swap;
+  src: url("./../fonts/Montserrat_Alternates/MontserratAlternates-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-alternates";
+  font-weight: 700;
+  font-display: swap;
+  src: url("./../fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf");
+}
+
+html {
+  --primary: #de744c;
+  --alternative: #deb13c;
+  --alternative-2: #bfd8d2;
+  --dark: #141414;
+  --white: #f9f9f9;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: raleway, sans-serif;
+  color: var(--dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  font-family: montserrat-alternates, sans-serif;
+}
+
+a {
+  font-weight: 700;
+}

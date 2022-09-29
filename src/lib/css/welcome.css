@@ -1,0 +1,33 @@
+#welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--alternative-2);
+  padding: 2em;
+  min-height: 100vh;
+}
+
+#welcome > div {
+  width: 100%;
+  max-width: 540px;
+}
+
+#welcome .title {
+  color: var(--primary);
+}
+
+.bookmarks {
+  width: 100%;
+  border-radius: 1em;
+  padding: 2em;
+  background-color: var(--white);
+}
+
+.bookmarks li {
+  margin-left: 1em;
+}
+
+.bookmarks a {
+  display: block;
+  margin-bottom: 0.5em;
+}
