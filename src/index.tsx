@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./lib/app";
+import App from "./write-doc/app";
 import reportWebVitals from "./reportWebVitals";
 import bookmarks from "./bookmarks";
 

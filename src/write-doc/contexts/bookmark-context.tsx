@@ -2,12 +2,12 @@ import { createContext, ReactNode, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Bookmark } from "../types/bookmark";
 
-interface BookmarkProviderProps {
+export interface BookmarkProviderProps {
   children: ReactNode;
   bookmarks: Bookmark[];
 }
 
-interface BookmarkContextInterface {
+export interface BookmarkContextInterface {
   bookmark: Bookmark;
   setIndex: (index: number) => void;
   index: number;

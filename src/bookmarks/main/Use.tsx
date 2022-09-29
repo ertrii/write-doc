@@ -1,4 +1,4 @@
-import { Page } from "../../lib";
+import { Page } from "../../write-doc";
 
 export default function Use() {
   return (

@@ -1,11 +1,11 @@
 import { createContext, ReactNode } from "react";
 
-interface PageProviderProps {
+export interface PageProviderProps {
   children: ReactNode;
   title: string;
 }
 
-interface PageContextInterface {
+export interface PageContextInterface {
   title: string;
 }
 

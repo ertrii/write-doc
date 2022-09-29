@@ -1,4 +1,4 @@
-import { Bookmark, bookmark, group } from "../lib";
+import { Bookmark, bookmark, group } from "../write-doc";
 import Main from "./main";
 import Use from "./main/Use";
 

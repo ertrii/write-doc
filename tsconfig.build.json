@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "lib",
+    "sourceMap": false,
+    "strict": true,
+    "target": "es5",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "removeComments": true,
+    "noImplicitAny": false,
+    "declaration": true
+  },
+  "compileOnSave": true,
+  "include": ["src/write-doc"],
+  "exclude": ["node_modules", "**/*.spec.ts", "lib", "dist", "types"]
+}
