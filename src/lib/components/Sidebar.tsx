@@ -17,21 +17,7 @@ export default function Sidebar({ children }: SidebarProps) {
     <div id="layout">
       <nav id="sidebar">
         <div id="logo">
-          <h2>Forest Project</h2>
-        </div>
-        <div className="selector">
-          <select
-            defaultValue={index.toString()}
-            name="proyect"
-            id="select"
-            onChange={changeHandler}
-          >
-            {bookmarkNames.map((name, i) => (
-              <option key={i} value={i.toString()}>
-                {name}
-              </option>
-            ))}
-          </select>
+          <h2>Writedoc</h2>
         </div>
         <Menu />
       </nav>

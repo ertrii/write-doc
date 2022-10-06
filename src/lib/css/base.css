@@ -48,11 +48,29 @@
 }
 
 html {
-  --primary: #de744c;
+  --primary: #7aa1f6;
+  /** monocromático */
+  --shuttle-grey: #5e6575;
+  --glaucous: #6180c2;
+  --moonraker: #c5d5f7;
+  --blue-jay: #3b4d75;
+  /** tríada */
+  --light-lime: #c2f562;
+  --chelsea-cucumber: #88a84c;
+  --blush: #f5a393;
+  --dusky-blue: #4363a8;
+  /** neutro */
+  --white: #fff;
+  --dark: #000;
+  --text-light-high: rgba(255, 255, 255, 0.87);
+  --text-light-medium: rgba(255, 255, 255, 0.6);
+  --text-light-disable: rgba(255, 255, 255, 0.38);
+  --text-dark-high: rgba(0, 0, 0, 0.87);
+  --text-dark-medium: rgba(0, 0, 0, 0.6);
+  --text-dark-disable: rgba(0, 0, 0, 0.38);
+
   --alternative: #deb13c;
   --alternative-2: #bfd8d2;
-  --dark: #141414;
-  --white: #f9f9f9;
 }
 
 *,
@@ -62,7 +80,7 @@ html {
   padding: 0;
   margin: 0;
   font-family: raleway, sans-serif;
-  color: var(--dark);
+  color: var(--text-dark-high);
 }
 
 h1,
@@ -72,7 +90,8 @@ h4,
 h5,
 h6,
 .heading {
-  font-family: montserrat-alternates, sans-serif;
+  font-family: raleway, sans-serif;
+  color: inherit;
 }
 
 a {
