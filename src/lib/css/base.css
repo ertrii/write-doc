@@ -69,6 +69,13 @@ html {
   --text-dark-medium: rgba(0, 0, 0, 0.6);
   --text-dark-disable: rgba(0, 0, 0, 0.38);
 
+  --light-high: rgba(255, 255, 255, 0.87);
+  --light-medium: rgba(255, 255, 255, 0.6);
+  --light-disable: rgba(255, 255, 255, 0.38);
+  --dark-high: rgba(0, 0, 0, 0.87);
+  --dark-medium: rgba(0, 0, 0, 0.6);
+  --dark-disable: rgba(0, 0, 0, 0.38);
+
   --alternative: #deb13c;
   --alternative-2: #bfd8d2;
 }

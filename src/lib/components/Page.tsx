@@ -11,8 +11,23 @@ export default function Page({ children }: PageProps) {
 
   return (
     <Sidebar>
-      <h1 className="title">{title}</h1>
-      {children}
+      <div id="breadcrumb">
+        <span>Bookmark</span> / <span>Title</span> / <span>{title}</span>
+      </div>
+      <div className="content">
+        <article>
+          <h1 className="title">{title}</h1>
+          {children}
+        </article>
+        <aside>
+          <p>Current Page</p>
+          <ul>
+            <li className="active">Explication</li>
+            <li>Import</li>
+            <li>Usage</li>
+          </ul>
+        </aside>
+      </div>
       <Navigation />
     </Sidebar>
   );

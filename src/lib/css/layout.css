@@ -7,7 +7,7 @@ body #layout {
 #sidebar {
   width: 275px;
   background-color: var(--shuttle-grey);
-  padding: 1.6em;
+  padding: 1.3em 1.6em 2em;
 }
 
 #sidebar #logo {
@@ -25,6 +25,7 @@ body #layout {
   outline: none;
   color: var(--text-dark-high);
   margin-bottom: 1.6em;
+  font-size: 14px;
 }
 
 #sidebar .books {
@@ -106,26 +107,87 @@ body #layout {
   overflow-y: auto;
 }
 
-#section h1.title {
+#section #breadcrumb {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--dark-disable);
+  background-color: var(--light-lime);
+  padding: 1em;
+  border-radius: 4px;
+}
+
+#section #breadcrumb span {
+  color: var(--dark-disable);
+}
+
+#section #breadcrumb span:last-child {
+  color: var(--glaucous);
+  font-weight: bold;
+}
+
+#section .content {
+  display: flex;
+  padding-top: 2em;
+  justify-content: space-between;
+  position: relative;
+}
+
+#section .content aside {
+  padding-right: 1em;
+  position: sticky;
+  right: 0;
+  width: 275px;
+  font-size: 14px;
+}
+
+#section .content aside p {
+  margin-bottom: 1.2em;
+  color: var(--shuttle-grey);
+  font-weight: bold;
+}
+
+#section .content aside ul {
+  list-style: none;
+  font-size: 12px;
+}
+
+#section .content aside ul li {
+  margin-bottom: 0.6em;
+  color: var(--dark-medium);
+  cursor: pointer;
+}
+
+#section .content aside ul li.active {
+  color: var(--primary);
+  font-weight: bold;
+  cursor: auto;
+}
+
+#section article {
+  padding-right: 2em;
+  padding-top: 1em;
+}
+
+#section article h1.title {
   color: var(--primary);
 }
 
-#section p,
-#section ul {
+#section article p,
+#section article ul {
   margin-bottom: 0.8em;
   line-height: 1.4em;
-  font-size: 1.1em;
+  font-size: 14px;
   font-weight: 500;
   font-weight: 400;
 }
 
-#section p span {
+#section article p span {
   color: var(--primary);
 }
 
 #section img {
-  max-width: 720px;
-  border: 4px solid var(--alternative-2);
+  max-width: 100%;
+  border: 4px solid var(--glaucous);
   max-height: 350px;
   margin-bottom: 1em;
   display: block;
