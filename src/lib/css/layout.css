@@ -7,91 +7,103 @@ body #layout {
 #sidebar {
   width: 275px;
   background-color: var(--shuttle-grey);
-  padding: 1.5em;
+  padding: 1.6em;
 }
 
 #sidebar #logo {
-  height: calc(80px - 1em);
   font-size: 0.8em;
   color: var(--text-light-high);
+  margin-bottom: 2em;
+}
+
+#sidebar .search {
+  width: 100%;
+  padding: 0.6em 1em;
+  border: none;
+  border-radius: 0.2em;
+  background-color: var(--text-light-disable);
+  outline: none;
+  color: var(--text-dark-high);
+  margin-bottom: 1.6em;
+}
+
+#sidebar .books {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#sidebar .books li {
+  color: var(--text-light-high);
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#sidebar .books li .icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.6em;
+  background-color: var(--text-light-medium);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+#sidebar .books li.active {
+  color: var(--white);
+  font-weight: bold;
+}
+
+#sidebar .books li.active .icon {
+  background-color: var(--light-lime);
+}
+
+#sidebar .menu {
+  margin-top: 2em;
 }
 
 #sidebar .menu h3 {
-  font-size: 0.7em;
+  font-size: 0.8em;
   text-transform: uppercase;
-  color: var(--primary);
+  color: var(--light-lime);
   margin-bottom: 0.5em;
   margin-top: 1em;
+  margin-bottom: 0.6em;
 }
 
 #sidebar ul {
   list-style: none;
 }
 
-#sidebar ul li {
-  padding: 0.2em 0;
+#sidebar .menu ul li {
+  margin-bottom: 4px;
 }
 
-#sidebar ul a {
+#sidebar .menu ul a {
   text-decoration: none;
   font-size: 0.9em;
-  margin-left: 0.8em;
   position: relative;
+  padding: 0.3em 0.6em;
+  border-radius: 3px;
+  width: 100%;
+  display: block;
+  color: var(--text-light-medium);
 }
 
-#sidebar ul li a::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  position: absolute;
-  background-color: var(--primary);
-  left: -12px;
-  top: 6px;
-  border-radius: 100%;
-}
-
-#sidebar ul li a:hover {
-  text-decoration: underline;
-}
-
-#sidebar ul li.active a {
+#sidebar .menu ul li.active a {
   opacity: 1;
   pointer-events: none;
-  border-bottom: 2px solid var(--primary);
+  background-color: var(--text-light-high);
+  color: var(--dark);
 }
 
 #section {
   width: calc(100% - 275px);
   background-color: var(--white);
-  padding: 1em 2em 3em;
+  padding: 1em 3em 3em;
   overflow-y: auto;
-}
-
-#section h1:not(.title),
-#section h2,
-#section h3,
-#section h4,
-#section h5,
-#section h6 {
-  margin-top: 0.2em;
-  margin-bottom: 0.5em;
-}
-
-#section h1:not(.title),
-#section h2 {
-  font-size: 1.2em;
-}
-#section h3 {
-  font-size: 1.1em;
-}
-#section h4 {
-  font-size: 1em;
-}
-#section h5 {
-  font-size: 0.9em;
-}
-#section h6 {
-  font-size: 0.8em;
 }
 
 #section h1.title {
@@ -109,13 +121,6 @@ body #layout {
 
 #section p span {
   color: var(--primary);
-}
-#section p b {
-  font-weight: 700;
-}
-
-#section ul {
-  padding-left: 1em;
 }
 
 #section img {

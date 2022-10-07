@@ -11,13 +11,9 @@ export default function Page({ children }: PageProps) {
 
   return (
     <Sidebar>
-      <div id="section">
-        <section>
-          <h1 className="title">{title}</h1>
-          {children}
-          <Navigation />
-        </section>
-      </div>
+      <h1 className="title">{title}</h1>
+      {children}
+      <Navigation />
     </Sidebar>
   );
 }
