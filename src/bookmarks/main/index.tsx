@@ -1,16 +1,16 @@
-import { Page } from "../../lib";
+import { Page, Text } from "../../lib";
 
 export default function Main() {
   return (
     <Page>
-      <p>
+      <Text>
         This is a simple static web, structured in <b>React</b> for
         documentation use only.
-      </p>
-      <p>
+      </Text>
+      <Text>
         The objective is to centralize all the documentation to facilitate the
         search.
-      </p>
+      </Text>
     </Page>
   );
 }

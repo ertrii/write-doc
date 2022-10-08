@@ -1,0 +1,43 @@
+#section article .heading {
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  color: var(--primary);
+}
+
+#section article h2.heading {
+  font-size: 24px;
+  color: var(--dark-hight);
+}
+
+#section article h3.heading {
+  font-size: 18px;
+  color: var(--dark-medium);
+}
+
+#section article h4.heading {
+  font-size: 15px;
+  color: var(--dark-disable);
+}
+
+#section article .text,
+#section article ul {
+  max-width: 720px;
+}
+
+#section article .text b {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+#section article .text span {
+  color: var(--chelsea-cucumber);
+}
+
+#section article .text,
+#section article ul {
+  margin-bottom: 0.8em;
+  line-height: 1.4em;
+  font-size: 15px;
+  color: var(--shuttle-grey);
+  font-weight: 500;
+}

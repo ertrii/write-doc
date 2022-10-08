@@ -13,6 +13,10 @@ const bookmarks: Bookmark[] = [
         title: "Uso",
         page: Use,
       },
+      "/next": {
+        title: "Siguiente uso",
+        page: Use,
+      },
     }),
   ]),
   bookmark("Nueva prueba", "/new_test", [
@@ -23,6 +27,10 @@ const bookmarks: Bookmark[] = [
       },
       "/use": {
         title: "Uso 2",
+        page: Use,
+      },
+      "/next": {
+        title: "Siguiente uso",
         page: Use,
       },
     }),

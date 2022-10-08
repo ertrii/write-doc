@@ -75,9 +75,6 @@ html {
   --dark-high: rgba(0, 0, 0, 0.87);
   --dark-medium: rgba(0, 0, 0, 0.6);
   --dark-disable: rgba(0, 0, 0, 0.38);
-
-  --alternative: #deb13c;
-  --alternative-2: #bfd8d2;
 }
 
 *,

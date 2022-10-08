@@ -1,0 +1,8 @@
+#section img.image {
+  width: 100%;
+  max-width: 520px;
+  border: 1px solid var(--primary);
+  margin-bottom: 1em;
+  display: block;
+  border-radius: 4px;
+}

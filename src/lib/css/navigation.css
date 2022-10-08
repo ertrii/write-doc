@@ -1,0 +1,24 @@
+#section .navigation {
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#section .navigation a {
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+#section .navigation div {
+  display: inline-block;
+  margin: 0 0.2em;
+  border-radius: 100%;
+}
+
+#section .navigation div span {
+  color: var(--primary);
+}

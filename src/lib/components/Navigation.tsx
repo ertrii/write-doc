@@ -45,19 +45,19 @@ export default function Navigation() {
   return (
     <div className="navigation">
       {prev ? (
-        <>
-          <span>⬅</span>
+        <div>
+          <span>{`< `}</span>
           <Link to={getUrl(bookmark.path, prev[0])}>{prev[1].title}</Link>
-        </>
+        </div>
       ) : (
         ""
       )}
       {prev && next ? <div></div> : ""}
       {next ? (
-        <>
+        <div>
           <Link to={getUrl(bookmark.path, next[0])}>{next[1].title}</Link>
-          <span>➡</span>
-        </>
+          <span>{` >`}</span>
+        </div>
       ) : (
         ""
       )}
