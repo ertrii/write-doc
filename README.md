@@ -64,12 +64,12 @@ bookmarks
 ```
 
 ```jsx
-import { Page } from "write-doc";
+import { Page, Text } from "write-doc";
 
 export default function Theme1() {
   return (
     <Page>
-      <p>Hello word.</p>
+      <Text>Hello word.</Text>
     </Page>
   );
 }
@@ -124,22 +124,22 @@ export default bookmarks;
 
 ## Components
 
-Only use html tags inside **Page** Component
-
 ```js
-import { Page } from "write-doc";
+import { Page, Heading, Text, Image } from "write-doc";
 
 export default function MyPage() {
   return (
     <Page>
-      <p>
+      <Heading>Title</Heading>
+      <Text>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sint
         quaerat facere voluptates numquam cupiditate in. Dicta a, quis aliquid,
         officiis ipsam repudiandae, voluptatum eaque ducimus culpa numquam aut
         eligendi?
-      </p>
-      <h2>Sub title</h2>
-      <p>Text...</p>
+      </Text>
+      <Heading type="heading-2">Sub title</Heading>
+      <Text>Text...</Text>
+      <Image src={url} />
     </Page>
   );
 }

@@ -7,7 +7,7 @@ export default function Welcome() {
   return (
     <div id="welcome">
       <div>
-        <h1 className="title">Docs APP</h1>
+        <h1 className="title">Docs</h1>
         <ul className="bookmarks">
           {bookmarks.map((bookmark, i) => (
             <li key={i}>
