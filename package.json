@@ -1,6 +1,6 @@
 {
   "name": "write-doc",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "private": false,
   "description": "An environment to document",
   "devDependencies": {
@@ -70,6 +70,6 @@
     "LICENSE"
   ],
   "dependencies": {
-    "redity": "^1.0.0"
+    "redity": "^1.0.1"
   }
 }
