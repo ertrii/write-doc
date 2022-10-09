@@ -36,7 +36,7 @@ export function Note({ path, Component, title }: NoteProps) {
     <Route
       path={path}
       element={
-        <PageProvider title={title}>
+        <PageProvider notebookName="" title={title}>
           <Component />
         </PageProvider>
       }

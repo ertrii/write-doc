@@ -4,6 +4,7 @@ import "../css/base.css";
 import "../css/welcome.css";
 import "../css/layout.css";
 import "../css/navigation.css";
+import "../css/aside.css";
 
 import "../css/text.css";
 import Router from "./Router";

@@ -1,0 +1,45 @@
+#section .content aside {
+  padding-right: 1em;
+  position: relative;
+  width: 275px;
+  font-size: 14px;
+}
+
+#section .content aside .content {
+  position: fixed;
+  display: inline;
+}
+
+#section .content aside p {
+  margin-bottom: 1.2em;
+  color: var(--shuttle-grey);
+  font-weight: bold;
+}
+
+#section .content aside ul {
+  list-style: none;
+  font-size: 12px;
+}
+
+#section .content aside ul a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--dark-medium);
+}
+
+#section .content aside ul li {
+  margin-bottom: 0.6em;
+  color: var(--dark-medium);
+  cursor: pointer;
+}
+
+#section .content aside ul li.active > a {
+  color: var(--primary);
+  pointer-events: none;
+  font-weight: bold;
+}
+
+#section .content aside ul ul {
+  margin-top: 0.6em;
+  padding-left: 0.6em;
+}

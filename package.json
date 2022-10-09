@@ -68,5 +68,8 @@
     "lib",
     "Readme.md",
     "LICENSE"
-  ]
+  ],
+  "dependencies": {
+    "redity": "^1.0.0"
+  }
 }

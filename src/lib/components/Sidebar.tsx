@@ -11,7 +11,10 @@ export default function Sidebar({ children }: SidebarProps) {
         <div id="logo">
           <h2>Writedoc</h2>
         </div>
-        <input className="search" placeholder="🔎 Búsqueda" />
+        <div className="content-search">
+          <div className="icon" />
+          <input className="search" placeholder="Búsqueda" />
+        </div>
         <Menu />
       </nav>
       <section id="section">{children}</section>

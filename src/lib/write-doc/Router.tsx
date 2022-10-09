@@ -17,7 +17,7 @@ export default function Router() {
               key={getUrl(bookmark.path, path)}
               path={getUrl(bookmark.path, path)}
               element={
-                <PageProvider title={value.title}>
+                <PageProvider notebookName={group.name} title={value.title}>
                   <value.page />
                 </PageProvider>
               }
@@ -29,7 +29,7 @@ export default function Router() {
       <Route
         path="*"
         element={
-          <PageProvider title="404">
+          <PageProvider notebookName="" title="404">
             <Page404 />
           </PageProvider>
         }

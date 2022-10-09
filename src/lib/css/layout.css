@@ -16,9 +16,14 @@ body #layout {
   margin-bottom: 2em;
 }
 
-#sidebar .search {
+#sidebar .content-search {
+  position: relative;
+}
+
+#sidebar .content-search .search {
   width: 100%;
   padding: 0.6em 1em;
+  padding-left: 3em;
   border: none;
   border-radius: 0.2em;
   background-color: var(--text-light-disable);
@@ -26,6 +31,29 @@ body #layout {
   color: var(--text-dark-high);
   margin-bottom: 1.6em;
   font-size: 14px;
+  caret-color: var(--light-lime);
+}
+
+#sidebar .content-search .icon {
+  width: 12px;
+  height: 12px;
+  top: 10px;
+  left: 1em;
+  border: 2px solid var(--light-lime);
+  border-radius: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#sidebar .content-search .icon::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 2px;
+  background-color: var(--light-lime);
+  top: 8px;
+  left: 8px;
+  transform: rotate(35deg);
 }
 
 #sidebar .books {
@@ -117,7 +145,7 @@ body #layout {
 }
 
 #section #breadcrumb span {
-  color: var(--dark-disable);
+  color: var(--dark-medium);
 }
 
 #section #breadcrumb span:last-child {
@@ -127,49 +155,13 @@ body #layout {
 
 #section .content {
   display: flex;
-  padding-top: 2em;
+  padding-top: 1em;
   justify-content: space-between;
   position: relative;
-}
-
-#section .content aside {
-  padding-right: 1em;
-  position: sticky;
-  right: 0;
-  top: 0;
-  width: 275px;
-  font-size: 14px;
-}
-
-#section .content aside p {
-  margin-bottom: 1.2em;
-  color: var(--shuttle-grey);
-  font-weight: bold;
-}
-
-#section .content aside ul {
-  list-style: none;
-  font-size: 12px;
-}
-
-#section .content aside ul li {
-  margin-bottom: 0.6em;
-  color: var(--dark-medium);
-  cursor: pointer;
-}
-
-#section .content aside ul li.active {
-  color: var(--primary);
-  font-weight: bold;
-  cursor: auto;
 }
 
 #section article {
   padding-right: 3em;
   padding-top: 1em;
   width: 100%;
-}
-
-#section article h1.title {
-  color: var(--primary);
 }
